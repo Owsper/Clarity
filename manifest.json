@@ -2,19 +2,15 @@
   "manifest_version": 3,
   "name": "Clarity",
   "version": "0.1",
-  "description": "AI-powered browser extension for cleaner social media feeds",
-  "permissions": ["activeTab", "scripting"],
-  "action": {
-    "default_popup": "index.html"
-  },
+  "description": "Blur unwanted words on webpages",
+  "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": [
-        "*://*.instagram.com/*",
-        "*://*.youtube.com/*",
-        "*://*.facebook.com/*"
-      ],
-      "js": ["script.js"]
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
     }
-  ]
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
 }
