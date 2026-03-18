@@ -1,15 +1,26 @@
 {
   "manifest_version": 3,
+
   "name": "Clarity",
+
   "version": "0.1",
+
   "description": "Blur unwanted words on webpages",
+
   "permissions": ["storage"],
+
+  "icons": {
+    "16": "icons/icon16.png"
+
+  },
+
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
   ],
+
   "action": {
     "default_popup": "index.html"
   }
