@@ -1,14 +1,110 @@
+
 body {
-  font-family:Monaco, monospace;
+  font-family: Inter, sans-serif;
   padding: 10px;
-
-
+  background: linear-gradient(135deg, #5b9cff, #7aaeff);
 }
 
-h2 {
-  text-align: center;
-  font-family: Monaco, monospace;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 500px;
+  background: #f7f9fc;
+  border-radius: 16px;
+  overflow: hidden;
 }
+
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-bottom: 2px solid #4A90E2;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+}
+
+
+.input-section {
+  display: flex;
+  padding: 12px;
+  background: #eef2f7;
+  border-radius: 12px;
+  margin: 12px;
+  overflow: hidden;
+}
+
+
+#wordInput {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #333;
+}
+
+#wordInput::placeholder {
+  color: #8a94a6;
+}
+
+
+#saveWord {
+  padding: 0 16px;
+  font-size: 13px;
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+#saveWord:hover {
+  background: linear-gradient(135deg, #357ABD, #2a5f94);
+}
+
+
+.input-section:focus-within {
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.3);
+}
+
+
+#wordList {
+  list-style: none;
+  padding: 0 12px;
+  margin: 0;
+}
+
+
+#wordList li {
+  background: #e6edf7;
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 .blur {
   filter: blur(10px);
