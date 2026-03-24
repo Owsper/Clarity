@@ -1,0 +1,1 @@
+1. when more words are added the "+ ADD" button shrinks

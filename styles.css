@@ -131,3 +131,15 @@ body {
   width: 35px;
   height: 35px;
 }
+.delete-btn {
+  margin-left: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: rgb(232, 53, 53);
+}
+
+#wordList li:hover .delete-btn {
+  opacity: 1;
+}
