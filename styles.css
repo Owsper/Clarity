@@ -22,7 +22,10 @@ body {
   align-items: center;
   gap: 10px;
   padding: 12px;
-  border-bottom: 2px solid #4A90E2;
+  border-bottom: 4px solid #4A90E2;
+  padding-bottom: 3px;
+  
+
 }
 
 .title {
@@ -37,78 +40,6 @@ body {
   border-radius: 6px;
 }
 
-
-.input-section {
-  display: flex;
-  padding: 12px;
-  background: #eef2f7;
-  border-radius: 12px;
-  margin: 12px;
-  overflow: hidden;
-}
-
-
-#wordInput {
-  flex: 1;
-  padding: 10px 12px;
-  font-size: 13px;
-  border: none;
-  outline: none;
-  background: transparent;
-  color: #333;
-}
-
-#wordInput::placeholder {
-  color: #8a94a6;
-}
-
-
-#saveWord {
-  padding: 0 16px;
-  font-size: 13px;
-  background: linear-gradient(135deg, #4A90E2, #357ABD);
-  color: white;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  transition: 0.2s ease;
-}
-
-#saveWord:hover {
-  background: linear-gradient(135deg, #357ABD, #2a5f94);
-}
-
-
-.input-section:focus-within {
-  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.3);
-}
-
-
-#wordList {
-  list-style: none;
-  padding: 0 12px;
-  margin: 0;
-}
-
-
-#wordList li {
-  background: #e6edf7;
-  padding: 10px 12px;
-  border-radius: 12px;
-  margin-bottom: 8px;
-  font-size: 13px;
-  color: #333;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.blur {
-  filter: blur(10px);
-}
 
 #settings-btn {
   margin-left: auto;
@@ -125,16 +56,72 @@ body {
   height: 35px;
 }
 
-.delete-btn {
-  margin-left: 10px;
-  font-size: 12px;
-  cursor: pointer;
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.adBlockSwitch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.adBlockSwitch input {
   opacity: 0;
-  transition: opacity 0.2s ease;
-  color: rgb(232, 53, 53);
+  width: 0;
+  height: 0;
 }
 
-#wordList li:hover .delete-btn {
-  opacity: 1;
+.adBlockSwitch .slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.3s;
 }
 
+.adBlockSwitch .slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+
+#adBlock:checked + .slider {
+  background: linear-gradient(to right, #4A90E2, #50E3C2);
+}
+
+
+#adBlock:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+.toggle-section label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.toggle-section {
+  margin-left: 90px;
+  margin-top: 10px;
+  
+
+}
+
+.adBlockIcon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
