@@ -1,3 +1,0 @@
-1. when more words are added the "+ ADD" button shrinks
-2. add settings page.
-3. 
