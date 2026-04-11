@@ -26,6 +26,8 @@ body {
   padding: 12px;
   border-bottom: 4px solid #4A90E2;
   padding-bottom: 3px;
+  border-color: black;
+  border-width: 0.5px;
   
 }
 
@@ -43,6 +45,7 @@ body {
   border-radius: 6px;
   outline: #1f1f1f solid 2px;
 }
+
 
 /* Adblock toggle switch */
 
@@ -121,7 +124,7 @@ body {
 
 .thirsttrapsection {
   margin-left: 25px;
-  margin-top: 0px;
+  margin-top: 1.5px;
   margin-right: 25px;
   border-color: #cfc9c9;
   border-width: 0.5px;
@@ -166,13 +169,13 @@ body {
   transition: 0.3s;
 }
 
-
-#thirstTrap:checked + .slider {
+      
+#thirstTrapBlock:checked + .slider {
   background: linear-gradient(to right, #4A90E2, #50E3C2);
 }
 
 
-#thirstTrap:checked + .slider::before {
+#thirstTrapBlock:checked + .slider::before {
   transform: translateX(24px);
 }
 
@@ -194,7 +197,7 @@ body {
 
 .nsfwblockselection {
   margin-left: 25px;
-  margin-top: 0px;
+  margin-top: 1.5px;
   margin-right: 25px;
   border-color: #cfc9c9;
   border-width: 0.5px;
@@ -263,7 +266,7 @@ body {
 
 .ragebaitblockselection {
   margin-left: 25px;
-  margin-top: 0px;
+  margin-top: 1.5px;
   margin-right: 25px;
   border-color: #cfc9c9;
   border-width: 0.5px;

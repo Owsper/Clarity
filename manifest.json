@@ -1,10 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Clarity",
-  "version": "0.1",
-  "description": "Blur unwanted words on webpages",
+  "version": "1.0",
+  "description": "Clears unwanted elements from web pages for a cleaner browsing experience.",
 
-  "permissions": ["storage"],
+  "permissions": [
+    "storage"
+  ],
 
   "icons": {
     "16": "icons/icon16.png",
@@ -20,6 +22,7 @@
   ],
 
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_title": "Clarity"
   }
 }
